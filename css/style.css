@@ -1,0 +1,172 @@
+@import	url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+    box-sizing: border-box;
+}
+
+html{
+	font-family: 'Alegreya SC', sans-serif;
+	font-size: 16px;
+	background: #fff;
+	color: #004FFF;
+}
+
+body{
+	color: #004FFF;
+	margin: 0;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+h1,legend{
+	font-family: 'Sorts Mill Goudy', serif;
+}
+
+#header {
+    padding: 15px 20px;
+    text-align: center;
+    background: #fafad2;
+    box-shadow: 5px 5px 10px #dc0000;
+}
+
+#header a, .buttons button{
+	color: #004FFF;
+    margin-right: 10px;
+    padding: 10px;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    color: #000;
+    text-decoration: none;
+    box-shadow: 1px 1px 2px #004FFF;
+}
+
+.buttons button#active-button{
+	box-shadow: inset 0px 0px 2px 0px #004FFF;
+}
+
+#header a:hover, .buttons button:hover{
+	box-shadow: inset 0px 0px 2px 0px #004FFF;
+}
+
+#footer{
+	padding: 0 5%;
+    color: #004FFF;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#footer ul{
+    margin: 0;
+    padding: 0;
+}
+
+#footer ul li{
+    display: inline-flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+#footer ul li a i{
+	font-size: 1.5rem;
+}
+
+
+#footer a{
+	color: #004FFF;
+}
+#footer p{
+	color: #004FFF;
+}
+#footer h3{
+	color: #004FFF;
+}
+
+
+.masthead{
+	background-image: url('../img/banner.jpg');
+	background-size: contain;
+	color: #004FFF;
+    padding: 3rem;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-content{
+    padding: 2rem;
+    margin: 0 5%;
+    background-color: #eee;
+}
+
+figure{
+	margin: 0;
+}
+
+.container p{
+	text-align: justify;
+}
+
+figure img{
+	margin-bottom: 2rem;
+}
+
+
+
+/*Media Queries*/
+
+@media (min-width: 60rem) {
+	body{
+		font-size: 1.5rem;
+	}
+
+	.main-content{
+	    margin: 0 auto;
+	    padding: 10rem 3rem;
+	    padding-top: 3rem;
+	}
+
+	.container{
+		display: inline-flex;
+		flex-wrap: wrap;
+	}
+
+	.container figure.portfolio-item{
+		flex-basis: 50%;
+	}
+
+	.container p{
+		    flex-basis: 50%;
+    order: 3;
+    margin-top: 0;
+    padding: 2rem;
+    padding-top: 0;
+    padding-left: 0;
+    text-align: left;
+	}
+
+	.container img{
+		flex-basis: 50%;
+    order: 2;
+    width: 50%;
+    padding-right: 2rem;
+    padding-bottom: 0;
+    float: left;
+    margin-bottom: 0;
+	}
+
+	.container h1{
+		flex-basis: 100%;
+	}
+
+}
+
+@media (min-width: 80rem) {
+	.container figure.portfolio-item{
+		flex-basis: 33%;
+	}
+}
